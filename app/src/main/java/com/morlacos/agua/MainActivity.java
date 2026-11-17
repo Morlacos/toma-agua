@@ -72,11 +72,11 @@ public class MainActivity extends Activity {
 
         btnStart.setOnClickListener(v -> {
             if (Prefs.running(this)) {
-                Prefs.setRunning(false);
+                Prefs.setRunning(this, false);
                 Scheduler.cancel(this);
             } else {
                 askNotifications();
-                Prefs.setRunning(true);
+                Prefs.setRunning(this, true);
                 Scheduler.scheduleIn(this, Prefs.interval(this) * 60_000L);
             }
             refreshAll();
