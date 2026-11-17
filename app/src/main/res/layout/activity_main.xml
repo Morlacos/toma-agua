@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:orientation="vertical" android:padding="16dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+          android:text="@string/title" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/ink" />
+      <Button android:id="@+id/langEs" android:layout_width="58dp" android:layout_height="46dp"
+          android:text="ES" style="@style/BtnAlt" android:textSize="15sp" android:minHeight="46dp" />
+      <Button android:id="@+id/langEn" android:layout_width="58dp" android:layout_height="46dp"
+          android:layout_marginStart="6dp"
+          android:text="EN" style="@style/BtnAlt" android:textSize="15sp" android:minHeight="46dp" />
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="220dp" android:layout_height="280dp"
+        android:layout_gravity="center_horizontal" android:layout_marginTop="14dp">
+      <com.morlacos.agua.GlassView android:id="@+id/glass"
+          android:layout_width="match_parent" android:layout_height="match_parent" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+          android:orientation="vertical" android:gravity="center">
+        <TextView android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="50sp" android:textStyle="bold" android:textColor="@color/ink"
+            android:fontFeatureSettings="tnum" android:shadowColor="#66FFFFFF" android:shadowRadius="4" />
+        <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textStyle="bold" android:textColor="@color/ink" android:gravity="center"
+            android:paddingStart="24dp" android:paddingEnd="24dp" />
+      </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="16dp">
+      <Button android:id="@+id/btnStart" android:layout_width="0dp" android:layout_weight="1"
+          android:layout_height="wrap_content" style="@style/Btn" android:text="@string/start" />
+      <Button android:id="@+id/btnDrank" android:layout_width="0dp" android:layout_weight="1"
+          android:layout_height="wrap_content" android:layout_marginStart="10dp"
+          style="@style/BtnAlt" android:text="@string/drank" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/warnBox" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" />
+
+    <LinearLayout style="@style/Card">
+      <TextView style="@style/CardTitle" android:text="@string/every" />
+      <LinearLayout android:id="@+id/chips" android:layout_width="match_parent"
+          android:layout_height="wrap_content" android:orientation="vertical" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="10dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/custom_label" android:textColor="@color/soft" android:textStyle="bold" android:textSize="15sp" />
+        <EditText android:id="@+id/etCustom" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="52dp" android:layout_marginStart="10dp"
+            android:inputType="number" android:maxLength="3" android:hint="@string/custom_hint"
+            android:textSize="18sp" android:imeOptions="actionDone" android:textColor="@color/ink" />
+        <Button android:id="@+id/btnApply" android:layout_width="wrap_content" android:layout_height="52dp"
+            android:layout_marginStart="10dp" android:paddingStart="20dp" android:paddingEnd="20dp"
+            style="@style/Btn" android:minHeight="52dp" android:text="@string/apply" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Card">
+      <TextView style="@style/CardTitle" android:text="@string/today" />
+      <LinearLayout android:id="@+id/drops" android:layout_width="match_parent"
+          android:layout_height="wrap_content" android:orientation="horizontal" />
+      <TextView android:id="@+id/tvCount" android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="8dp" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ink" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="8dp">
+        <TextView android:id="@+id/tvGoal" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textColor="@color/soft" android:textStyle="bold" android:textSize="15sp" />
+        <Button android:id="@+id/goalMinus" android:layout_width="52dp" android:layout_height="48dp"
+            style="@style/BtnAlt" android:minHeight="48dp" android:text="−" />
+        <Button android:id="@+id/goalPlus" android:layout_width="52dp" android:layout_height="48dp"
+            android:layout_marginStart="8dp" style="@style/BtnAlt" android:minHeight="48dp" android:text="+" />
+        <Button android:id="@+id/btnUndo" android:layout_width="wrap_content" android:layout_height="48dp"
+            android:layout_marginStart="8dp" android:paddingStart="14dp" android:paddingEnd="14dp"
+            style="@style/BtnAlt" android:minHeight="48dp" android:textSize="15sp" android:text="@string/undo" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Card">
+      <TextView style="@style/CardTitle" android:text="@string/options" />
+      <Switch android:id="@+id/swQuiet" android:layout_width="match_parent" android:layout_height="52dp"
+          android:text="@string/quiet" android:textSize="16sp" android:textColor="@color/ink" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/from" android:textColor="@color/soft" android:textStyle="bold" />
+        <Button android:id="@+id/btnQFrom" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="48dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+            style="@style/BtnAlt" android:minHeight="48dp" android:textSize="16sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/to" android:textColor="@color/soft" android:textStyle="bold" />
+        <Button android:id="@+id/btnQTo" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="48dp" android:layout_marginStart="8dp"
+            style="@style/BtnAlt" android:minHeight="48dp" android:textSize="16sp" />
+      </LinearLayout>
+      <Button android:id="@+id/btnTest" android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="14dp" style="@style/BtnAlt" android:text="@string/test" />
+      <Button android:id="@+id/btnSound" android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="10dp" style="@style/BtnAlt" android:text="@string/sound_settings" />
+    </LinearLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="14dp" android:layout_marginBottom="24dp" android:padding="4dp"
+        android:text="@string/note" android:textSize="13sp" android:textColor="@color/soft" />
+  </LinearLayout>
+</ScrollView>

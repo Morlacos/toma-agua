@@ -1,0 +1,10 @@
+<resources>
+    <color name="bg">#062A3A</color>
+    <color name="card">#0B3A4F</color>
+    <color name="ink">#E6F7FF</color>
+    <color name="soft">#9CC7D8</color>
+    <color name="line">#164E66</color>
+    <color name="glass_bg">#0E4660</color>
+    <color name="water">#38C6F4</color>
+    <color name="water_dark">#1593C4</color>
+</resources>

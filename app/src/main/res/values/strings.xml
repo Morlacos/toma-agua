@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Drink Water</string>
+    <string name="title">Drink water</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="drank">I drank 💧</string>
+    <string name="drank_short">I drank</string>
+    <string name="every">Remind me every</string>
+    <string name="custom_hint">Minutes</string>
+    <string name="apply">Use</string>
+    <string name="custom_label">Custom:</string>
+    <string name="today">Today</string>
+    <string name="count_fmt">%1$d of %2$d glasses</string>
+    <string name="goal_fmt">Daily goal: %d</string>
+    <string name="options">Options</string>
+    <string name="quiet">Quiet at night (no alarms)</string>
+    <string name="from">From</string>
+    <string name="to">to</string>
+    <string name="test">Test alarm</string>
+    <string name="sound_settings">Change alarm sound</string>
+    <string name="note">Alarms keep ringing at every interval even when the app is closed or the phone is locked. On Samsung, Xiaomi or Huawei phones, turn off battery optimization for this app so it is not stopped.</string>
+    <string name="paused">Paused</string>
+    <string name="next_at">Next at %s</string>
+    <string name="alarm_title">Time to drink water!</string>
+    <string name="alarm_text">A glass now keeps your energy up.</string>
+    <string name="snooze">5 more minutes</string>
+    <string name="channel_name">Water alarms</string>
+    <string name="channel_desc">Reminders to drink water</string>
+    <string name="perm_notif">Tap to allow notifications (needed for the alarm)</string>
+    <string name="perm_exact">Tap to allow exact alarms</string>
+    <string name="perm_fs">Tap to allow the full-screen alarm on the lock screen</string>
+    <string name="invalid">Enter between 1 and 600 minutes</string>
+    <string name="min_fmt">%d min</string>
+    <string name="hr_fmt">%d h</string>
+    <string name="hrmin_fmt">%1$d h %2$d</string>
+    <string name="undo">Undo</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="28dp"
+    android:background="@color/water_dark">
+  <ImageView android:id="@+id/drop" android:layout_width="110dp" android:layout_height="110dp"
+      android:src="@drawable/ic_drop" android:contentDescription="@null" />
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+      android:layout_marginTop="20dp" android:gravity="center"
+      android:text="@string/alarm_title" android:textSize="36sp" android:textStyle="bold" android:textColor="#FFFFFF" />
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+      android:layout_marginTop="10dp" android:gravity="center"
+      android:text="@string/alarm_text" android:textSize="18sp" android:textColor="#E6FFFFFF" />
+  <Button android:id="@+id/aDone" android:layout_width="match_parent" android:layout_height="64dp"
+      android:layout_marginTop="40dp" style="@style/Btn" android:background="@drawable/bg_white"
+      android:textColor="@color/water_dark" android:textSize="20sp" android:text="@string/drank_short" />
+  <Button android:id="@+id/aSnooze" android:layout_width="match_parent" android:layout_height="60dp"
+      android:layout_marginTop="12dp" style="@style/Btn" android:background="@drawable/bg_white_outline"
+      android:text="@string/snooze" />
+</LinearLayout>

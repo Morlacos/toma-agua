@@ -1,0 +1,29 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.morlacos.agua'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.morlacos.agua"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        fixed {
+            storeFile file('agua.keystore')
+            storePassword 'tomaagua'
+            keyAlias 'agua'
+            keyPassword 'tomaagua'
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.fixed }
+        release { minifyEnabled false; signingConfig signingConfigs.fixed }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

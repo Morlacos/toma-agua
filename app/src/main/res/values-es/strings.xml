@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Toma Agua</string>
+    <string name="title">Toma agua</string>
+    <string name="start">Iniciar</string>
+    <string name="stop">Detener</string>
+    <string name="drank">Ya tomé 💧</string>
+    <string name="drank_short">Ya tomé</string>
+    <string name="every">Recordarme cada</string>
+    <string name="custom_hint">Minutos</string>
+    <string name="apply">Usar</string>
+    <string name="custom_label">Personalizado:</string>
+    <string name="today">Hoy</string>
+    <string name="count_fmt">%1$d de %2$d vasos</string>
+    <string name="goal_fmt">Meta diaria: %d</string>
+    <string name="options">Opciones</string>
+    <string name="quiet">No molestar de noche (sin alarmas)</string>
+    <string name="from">De</string>
+    <string name="to">a</string>
+    <string name="test">Probar alarma</string>
+    <string name="sound_settings">Cambiar sonido de alarma</string>
+    <string name="note">Las alarmas siguen sonando en cada intervalo aunque cierres la app o bloquees el teléfono. En teléfonos Samsung, Xiaomi o Huawei, desactiva la optimización de batería para esta app para que no la detengan.</string>
+    <string name="paused">En pausa</string>
+    <string name="next_at">Próximo a las %s</string>
+    <string name="alarm_title">¡Hora de tomar agua!</string>
+    <string name="alarm_text">Un vaso ahora te mantiene con energía.</string>
+    <string name="snooze">5 minutos más</string>
+    <string name="channel_name">Alarmas de agua</string>
+    <string name="channel_desc">Recordatorios para tomar agua</string>
+    <string name="perm_notif">Toca para permitir notificaciones (necesarias para la alarma)</string>
+    <string name="perm_exact">Toca para permitir alarmas exactas</string>
+    <string name="perm_fs">Toca para permitir la alarma en pantalla completa</string>
+    <string name="invalid">Escribe entre 1 y 600 minutos</string>
+    <string name="min_fmt">%d min</string>
+    <string name="hr_fmt">%d h</string>
+    <string name="hrmin_fmt">%1$d h %2$d</string>
+    <string name="undo">Deshacer</string>
+</resources>
